@@ -1,0 +1,37 @@
+\chapter{Standard Model neutrinos}
+\label{chapter:nuIntro}
+Neutrinos are elementary particles, specifically neutral leptons, that, according to the \ac{SM} of Particle Physics \cite{fundamentalsOFnu}, only interact via weak interactions.  
+They were first postulated in 1930 by the Austrian physicist Wolfgang Pauli to describe the continuous energy spectrum of beta decay. 
+Since only the electron and the recoiling nucleus were observed, the process seemed to violate energy and angular momentum conservation; therefore, Pauli introduced a third, 
+unseen spin-1/2 particle to carry away the missing energy and balance the angular momentum \cite{Pauli:1930neutrinos}.
+
+They were eventually confirmed experimentally in 1956 by Clyde Cowan and Frederick Reines during an experiment conducted at the Savannah River 
+nuclear reactor in South Carolina. 
+This experiment exploited inverse beta decay, in which the postulated particle---specifically an electron antineutrino ($\overline{\nu}_e$)---interacts with a proton to produce a neutron and a positron, as described by Eq.~\ref{eq:inverse_beta_decay}.
+\begin{equation}
+    \label{eq:inverse_beta_decay}
+    \overline{\nu}_e + p \rightarrow n + e^{+}
+\end{equation}
+In the experimental setup, antineutrinos produced by the reactor fission processes interacted with protons in the water of two target tanks, 
+yielding a positron and a neutron. The positron quickly annihilated with an adjacent electron, producing two prompt gamma rays. 
+Meanwhile, the neutron thermalized and was subsequently captured by the cadmium nuclei of cadmium chloride (CdCl$_2$) dissolved in the water tanks.
+As a consequence of this neutron capture, an additional gamma-ray signal was released. The detection of these three gamma-ray signals 
+in delayed coincidence provided an unambiguous signature of the antineutrino interaction, definitively confirming the existence of 
+both neutrinos and antineutrinos~\cite{cowan1956nudetection}.
+
+Within the framework of the \ac{SM}, neutrinos are described as neutral fermions that do not participate in strong or 
+electromagnetic interactions: they are colour singlets and carry no electric charge. The \ac{LH} neutrino of each family is grouped with the corresponding charged lepton ($\ell = e, \mu, \tau$) into a weak-isospin doublet $L_\ell = (\nu_\ell, \ell)^T_\text{L}$.
+% , which transforms as $(\mathbf{1}, \mathbf{2}, -\tfrac{1}{2})$ under the gauge group SU$(3)_\text{C} \times$ SU$(2)_\text{L} \times$ U$(1)_Y$. The electromagnetic group U$(1)_\text{EM}$ is not part of the original gauge group: it is the subgroup that survives electroweak symmetry breaking, with $Q = T_3 + Y$. 
+No \ac{RH} neutrino field is present in the minimal \ac{SM}.
+
+The SU$(2)_\text{L}$ gauge invariance fixes the form of the weak interactions between neutrinos and the gauge bosons; neutrinos taking part in these interactions are called \textit{active} and, in the minimal \ac{SM}, are massless. These interactions consist of \ac{CC} processes mediated by the $W^\pm$ bosons and \ac{NC} processes mediated by the $Z^0$ boson, described by the following Lagrangians:
+\begin{equation}
+    \label{eq:SM-neutrino-lagrangian}
+    \begin{aligned}
+        \mathcal{L}_\text{CC} &= - \frac{g}{\sqrt{2}} \sum_{\ell} \overline{\nu}_{\text{L},\ell} \gamma^\mu \ell_\text{L}^- W_\mu^+ + \text{h.c.} \\
+        \mathcal{L}_\text{NC} &= - \frac{g}{2 \cos \theta_W} \sum_{\ell} \overline{\nu}_{\text{L},\ell} \gamma^\mu \nu_{\text{L},\ell} Z_\mu^0
+    \end{aligned}
+\end{equation}
+where $g$ is the SU$(2)_\text{L}$ coupling constant and $\theta_W$ is the Weinberg weak mixing angle. 
+
+Precision measurements of the invisible decay width of the $Z^0$ boson at LEP constrain the number of active neutrino families to $N_\nu = 2.9963 \pm 0.0074$~\cite{JanotJadach2020}, consistent with the three known generations of charged leptons\footnote{The measurement only counts active neutrinos lighter than $m_Z/2$; it does not exclude sterile neutrinos.}.

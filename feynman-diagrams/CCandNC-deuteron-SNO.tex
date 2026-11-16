@@ -1,0 +1,55 @@
+% --- Diagramma 1: Corrente Carica (CC) per SNO ---
+\begin{tikzpicture}[
+    thick,
+    fermion/.style={draw=black, postaction={decorate},
+        decoration={markings, mark=at position 0.55 with {\arrow{latex}}}},
+    boson/.style={draw=black, decorate,
+        decoration={snake, amplitude=1.5pt, segment length=5pt}},
+    dot/.style={circle, fill=black, minimum size=4pt, inner sep=0pt}
+]
+    \coordinate (V1) at (0, 1.2);
+    \coordinate (V2) at (0, -1.2);
+    
+    % Linea superiore: neutrino -> elettrone
+    \draw[fermion] (-1.5, 1.8) node[left] {$\nu_e$} -- (V1);
+    \draw[fermion] (V1) -- (1.5, 1.8) node[right] {$e^-$};
+    
+    % Linee inferiori: neutrone che diventa protone, e protone spettatore
+    \draw[fermion] (-1.5, -1.8) node[left] {$n$} -- (V2);
+    \draw[fermion] (V2) -- (1.5, -1.8) node[right] {$p$};
+    \draw[fermion] (-1.5, -2.4) node[left] {$p$} -- (1.5, -2.4) node[right] {$p$};
+    
+    % Bosone scambiato W+
+    \draw[boson] (V1) -- node[right, xshift=2pt] {$W^+$} (V2);
+    
+    \node[dot] at (V1) {};
+    \node[dot] at (V2) {};
+\end{tikzpicture}
+\hspace{2.5 cm}
+% --- Diagramma 2: Corrente Neutra (NC) per SNO ---
+\begin{tikzpicture}[
+    thick,
+    fermion/.style={draw=black, postaction={decorate},
+        decoration={markings, mark=at position 0.55 with {\arrow{latex}}}},
+    boson/.style={draw=black, decorate,
+        decoration={snake, amplitude=1.5pt, segment length=5pt}},
+    dot/.style={circle, fill=black, minimum size=4pt, inner sep=0pt}
+]
+    \coordinate (V3) at (0, 1.2);
+    \coordinate (V4) at (0, -1.2);
+    
+    % Linea superiore: neutrino -> elettrone
+    \draw[fermion] (-1.5, 1.8) node[left] {$\nu_\ell$} -- (V3);
+    \draw[fermion] (V1) -- (1.5, 1.8) node[right] {$\nu_\ell$};
+    
+    % Linee inferiori: neutrone che diventa protone, e protone spettatore
+    \draw[fermion] (-1.5, -1.8) node[left] {$n$} -- (V4);
+    \draw[fermion] (V2) -- (1.5, -1.8) node[right] {$n$};
+    \draw[fermion] (-1.5, -2.4) node[left] {$p$} -- (1.5, -2.4) node[right] {$p$};
+
+    % Bosone scambiato Z0
+    \draw[boson] (V3) -- node[right, xshift=2pt] {$Z^0$} (V4);
+    
+    \node[dot] at (V3) {};
+    \node[dot] at (V4) {};
+\end{tikzpicture}

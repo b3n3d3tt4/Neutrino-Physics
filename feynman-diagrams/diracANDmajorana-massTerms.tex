@@ -1,0 +1,39 @@
+\begin{tikzpicture}[
+    thick,
+    % Stile per i fermioni (linea continua con freccia a metà)
+    fermion/.style={draw=black, postaction={decorate},
+        decoration={markings, mark=at position 0.55 with {\arrow{latex}}}},
+    % Stile per il campo scalare (linea tratteggiata)
+    scalar/.style={draw=black, dashed},
+    % Stile per la X
+    cross/.style={cross out, draw=black, thick, minimum size=8pt, inner sep=0pt},
+    % Stile per il vertice puntiforme
+    dot/.style={circle, fill=black, minimum size=4pt, inner sep=0pt}
+]
+
+% ---------------- DIAGRAMMA DI DIRAC (Sinistra) ----------------
+\coordinate (D) at (0,0);
+
+% Linee entrante e uscente
+\draw[fermion] (-1.5, 1.5) node[left] {$\nu_L$} -- (D);
+\draw[fermion] (D) -- (1.5, 1.5) node[right] {$\nu_R$};
+
+% Linea tratteggiata (Higgs) con la X finale
+\draw[scalar] (D) -- (0, -1.5);
+\node[cross] at (0, -1.5) {};
+
+% Vertice centrale con pallino e label
+\node[dot, label=right:{$m_D$}] at (D) {};
+
+
+% ---------------- DIAGRAMMA DI MAJORANA (Destra) ----------------
+\coordinate (M) at (6, 0.5); % Spostato a destra e leggermente in alto per allineamento visivo
+
+% Linee (entrambe puntano verso il centro)
+\draw[fermion] (4, 0.5) node[left] {$\nu_R$} -- (M);
+\draw[fermion] (8, 0.5) node[right] {$\overline{\nu}_L$} -- (M);
+
+% Vertice centrale con la X e label
+\node[cross, label=above:{$M$}] at (M) {};
+
+\end{tikzpicture}

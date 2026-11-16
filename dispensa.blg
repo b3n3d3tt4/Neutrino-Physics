@@ -1,0 +1,19 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'dispensa.blg'
+[302] biber-MSWIN64:340> INFO - === 
+[410] Biber.pm:420> INFO - Reading 'dispensa.bcf'
+[535] Biber.pm:994> INFO - Found 28 citekeys in bib section 0
+[552] Biber.pm:4463> INFO - Processing section 0
+[591] Biber.pm:4654> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[672] bibtex.pm:1713> INFO - LaTeX decoding ...
+[782] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[1103] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1104] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1104] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1104] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1140] bbl.pm:676> INFO - Writing 'dispensa.bbl' with encoding 'UTF-8'
+[1162] bbl.pm:779> INFO - Output to dispensa.bbl
+[1162] Biber.pm:131> WARN - legacy month field 'Jun' in entry 'SNO2002-results' is not an integer - this will probably not sort properly.
+[1162] Biber.pm:131> WARN - legacy month field 'Sep' in entry 'firstDoubleBeta' is not an integer - this will probably not sort properly.
+[1162] Biber.pm:131> WARN - legacy month field 'mar' in entry 'AME2020-masses' is not an integer - this will probably not sort properly.
+[1162] Biber.pm:133> INFO - WARNINGS: 3

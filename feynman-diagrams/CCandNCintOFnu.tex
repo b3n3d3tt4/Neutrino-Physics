@@ -1,0 +1,45 @@
+% --- Diagramma 1: Corrente Carica (CC) ---
+\begin{tikzpicture}[
+    thick,
+    fermion/.style={draw=black, postaction={decorate},
+        decoration={markings, mark=at position 0.55 with {\arrow{latex}}}},
+    boson/.style={draw=black, decorate,
+        decoration={snake, amplitude=1.5pt, segment length=5pt}},
+    dot/.style={circle, fill=black, minimum size=4pt, inner sep=0pt}
+]
+    \coordinate (V1) at (0, 1.2);
+    \coordinate (V2) at (0, -1.2);
+    
+    \draw[fermion] (-1.5, 1.8) node[left] {$\nu_e$} -- (V1);
+    \draw[fermion] (V1) -- (1.5, 1.8) node[right] {$e^-$};
+    \draw[fermion] (-1.5, -1.8) node[left] {$e^-$} -- (V2);
+    \draw[fermion] (V2) -- (1.5, -1.8) node[right] {$\nu_e$};
+    
+    \draw[boson] (V1) -- node[right, xshift=2pt] {$W^+$} (V2);
+    
+    \node[dot] at (V1) {};
+    \node[dot] at (V2) {};
+\end{tikzpicture}
+\hspace{2.5 cm}
+% --- Diagramma 2: Corrente Neutra (NC) ---
+\begin{tikzpicture}[
+    thick,
+    fermion/.style={draw=black, postaction={decorate},
+        decoration={markings, mark=at position 0.55 with {\arrow{latex}}}},
+    boson/.style={draw=black, decorate,
+        decoration={snake, amplitude=1.5pt, segment length=5pt}},
+    dot/.style={circle, fill=black, minimum size=4pt, inner sep=0pt}
+]
+    \coordinate (V3) at (0, 1.2);
+    \coordinate (V4) at (0, -1.2);
+    
+    \draw[fermion] (-1.5, 1.8) node[left] {$\nu_\ell$} -- (V3);
+    \draw[fermion] (V3) -- (1.5, 1.8) node[right] {$\nu_\ell$};
+    \draw[fermion] (-1.5, -1.8) node[left] {$e^-$} -- (V4);
+    \draw[fermion] (V4) -- (1.5, -1.8) node[right] {$e^-$};
+    
+    \draw[boson] (V3) -- node[right, xshift=2pt] {$Z^0$} (V4);
+    
+    \node[dot] at (V3) {};
+    \node[dot] at (V4) {};
+\end{tikzpicture}
