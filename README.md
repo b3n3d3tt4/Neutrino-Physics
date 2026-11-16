@@ -8,7 +8,7 @@ The report is largely based on my Master Thesis chapters and it is obviously bia
 
 The report is not complted yet, as I plan to add a signficant part to the first chapter in order to include also Standard Model physics of neutrinos. 
 
-If you find any error, typo or something that is not clear (or completely wrong) pleas write me!
+If you find any error, typo or something that is not clear (or completely wrong) please write me!
 
 _Benedetta Rasera_
 
